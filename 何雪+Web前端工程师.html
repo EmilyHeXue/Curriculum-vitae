@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>在线简历</title>
+		<style>
+	    body {
+	      margin: 0;
+	      font: 14px/1.5 Arial;
+	      color: #666;
+	      background: #efefef;
+	    }
+	    .layout {
+	      max-width: 900px;
+	      margin-left: auto;
+	      margin-right: auto;
+	      background: #fff;
+	    }
+	    
+	    #page {
+	      display: flex;
+	      flex-wrap: wrap;
+	      background: #fff;
+	      margin-top: 10px;
+	      margin-bottom: 10px;
+	    }
+	    header {
+	      background: #3c3c3c;
+	      width: 100%;
+	      text-align: center;
+	      padding: 60px 0 10px 0;
+	      color: #fff;
+	    }
+	    
+	    header>h1 {
+	      font-size: 30px;
+	      margin-bottom: 0;
+	    }
+	    
+	    header>p {
+	      font-size: 14px;
+	      color: #aaa;
+	      margin: 0;
+	    }
+	    
+	    aside {
+	      width: 240px;
+	      border-right: 1px solid #ccc;
+	      position: relative;
+	      padding-top: 100px;
+	    }
+	    
+	    aside .avatar {
+	      text-align: center;
+	      position: absolute;
+	      top: -80px;
+	      width: 100%;
+	    }
+	    
+	    aside .avatar img {
+	      width: 160px;
+	      height: 160px;
+	      border-radius: 50%;
+	      border: 1px solid #ccc;
+	      background: #ccc;
+	    }
+	    .title{
+	    	display: contents;
+	    }
+	    section {
+	      border-bottom:1px solid #ccc;
+	      margin: 5px 20px 0 20px;
+	      padding-bottom: 5px;
+	    }
+	    section:last-child{
+	    	border-bottom:none;
+	    }
+	    
+	    section h2 {
+	      color: #5c99ca;
+	      font-size: 15px;
+	    }
+	    
+	    section h3 {
+	      font-size: 14px;
+	      color: #333;
+	    }
+	    
+	    section a {
+	      color: #333;
+	    }
+	    
+	    
+	    .personal .item span:first-child {
+	      display: inline-block;
+	      width: 80px;
+	    }
+	    
+	    .personal .item span:last-child::before {
+	      content: ':';
+	      margin-right: 10px;
+	    }
+	    
+	    .skills .item {
+	      display: flex;
+	      align-items: center;
+	      padding: 3px 0;
+	    }
+	    
+	    .skills  .keyword {
+	      width: 80px;
+	    }
+	    
+	    .skills .rule {
+	      flex: 1;
+	      height: 4px;
+	      background: #ccc;
+	    }
+	    
+	    .skills .rule i {
+	      display: block;
+	      width: 10%;
+	      height: 4px;
+	      background: #000;
+	    }
+	    
+	    .contact .item {
+	      display: flex;
+	      align-items: center;
+	      padding: 3px 0;
+	    }
+	    .item li{width: 100%;overflow: hidden;}
+	    .contact svg {
+	      width: 25px;
+	      height: 25px;
+	    }
+	    
+	    .contact .item span {
+	      margin-left: 10px;
+	    }
+	    
+	    main {
+	      flex: 1;
+	      min-height: calc(100vh - 162px);
+	    }
+	    
+	    @media (max-width: 768px) {
+	      header {
+	        padding-top: 20px;
+	        padding-bottom: 90px;
+	      }
+	      aside {
+	        width: 100%;
+	        padding-top: 0px;
+	      }
+	      aside .avatar img {
+	        width: 100px;
+	        height: 100px;
+	      }
+	    } 
+  
+  </style>
+	</head>
+	<body>
+		<div class="layout" id="page">
+    <header>
+      <h1>何 雪</h1>
+      <p>应聘前端工程师</p>
+    </header>
+    <aside>
+      <div class="avatar">
+        <img src="img/zp.jpg" alt="he xue">
+      </div>
+      
+      <section>
+        <h2>基础信息</h2>
+        <div class="detail personal">
+          <div class="item">
+            <span>学历</span><span>大专</span>
+          </div>
+          <div class="item">
+            <span>工作经验</span><span>3年</span>
+          </div>
+          <div class="item">
+            <span>毕业时间</span><span>2017.6</span>
+          </div>
+          <div class="item">
+            <span>年龄</span><span>24岁</span>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <h2>专业技能</h2>
+        <div class="detail skills">
+          <div class="item">
+            <span class="keyword">HTML5</span>
+            <span class="rule"><i style="width: 85%"></i></span>
+          </div> 
+          <div class="item">
+            <span class="keyword">CSS3</span>
+            <span class="rule"><i style="width: 85%"></i></span>
+          </div> 
+          <div class="item">
+            <span class="keyword">jQuery</span>
+            <span class="rule"><i style="width: 80%"></i></span>
+          </div> 
+          <div class="item">
+            <span class="keyword">Vue</span>
+            <span class="rule"><i style="width: 90%"></i></span>
+          </div> 
+          <div class="item">
+            <span class="keyword">Node.js</span>
+            <span class="rule"><i style="width: 65%"></i></span>
+          </div> 
+        </div>
+      </section>
+      
+       <section>
+        <h2>联系方式</h2>
+        <div class="detail contact">
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
+            <span>13557122395</span>
+          </div>
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
+            <span>2083585497@qq.com</span>
+          </div>
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wechat"></use></svg>
+            <span>a7g9khexue</span>
+          </div>
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-city"></use></svg>
+            <span>深圳</span>
+          </div>
+
+        </div>
+      </section>
+      
+      <!--<section>
+        <h2>了解更多</h2>
+        <div class="detail contact">
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg>
+            <span class="link"><a href="https://github.com/EmilyHeXue">GitHub</a></span>
+          </div>
+          <div class="item">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-jianshu"></use></svg>
+            <span class="link"><a href="https://www.jianshu.com/u/5c663e7dcd20">简书</a></span>
+          </div>
+          
+        </div>
+      </section>-->
+      
+    </aside>
+    <main>
+      <section>
+        <h2>关于我</h2>
+        <div class="skill">
+            <ul>
+                <li>熟练掌握 HTML5 和 CSS3，具有 <b>像素级</b> 还原设计稿的能力。</li>
+                <li>熟练掌握原生 JS，掌握重要概念如 <b>原型</b>，<b>闭包</b>，<b>作用域链</b>等。</li>
+                <li>熟悉使用<b>Vue框架</b>，对Vue-router、Axios、Vuex有一定的理解； </li>
+                <li>熟悉 <b>jQuery</b> 常用 API。</li>
+                <li>熟悉 <b>HTTP 协议</b>、前后端交互技术 <b>JSONP</b>、<b>AJAX</b>。</li>
+                <!--<li>熟悉 <b>Node.js</b>，能使用 express 搭建基础后台开发。</li>-->
+                <!--<li>熟悉Http缓存机制，ES6语法。</li>-->
+                <li>掌握传统布局、flex 布局、响应式布局、<b>移动端适配</b>、<b>微信小程序开发</b>、web 性能优化。</li>
+                <li>掌握扎实的设计基础，精通<b>Photoshop</b>、CorelDRAW等平面设计软件</li>
+            </ul>
+        </div>
+      </section>
+      
+      <section>
+        <h2>项目经历</h2>
+        <div class="item">
+          <h3>共享博客平台
+          	<a href="https://github.com/EmilyHeXue/vue-blog">项目源码</a>
+          	<a href="https://emilyhexue.github.io/vue-blog/">预览项目</a>
+          </h3>
+          <ul>
+            <li>该项目使用 Vue 实现了一个在线博客分享的平台。包含首页、用户文章列表、个人管理等页面，实现了登录、注册、编辑、发布等功能。项目使用 Grid 作页面布局，以 Vue CLI 为基础创建项目模版，使用 Less 作 CSS 预处理，引用 Element UI 作交互。通过 Vue Router 实现路由的跳转、异步加载、权限验证等，通过 vuex 实现状态管理，用 Axios获取数据，并对接口进行了封装。</li>
+            <li>技术栈：Vue CLI/ Vue2/ Axios/ Vue Router/ Vuex/ ES6/ Npm/ Grid/ Less</li>
+            <!--<li>项目源码:https://github.com/EmilyHeXue/vue-blog</li>
+            <li>预览项目: <a href="https://emilyhexue.github.io/vue-blog/">点击查看</a></li>-->
+          </ul>
+        </div>
+        <div class="item">
+          <h3>音乐盒子
+          	<a href="https://github.com/EmilyHeXue/TV-MusicPlay">项目源码</a>
+          	<a href="https://emilyhexue.github.io/TV-MusicPlay/">预览项目</a>
+          </h3>
+          <ul>
+            <li>TV-MusicPlay是一个在线音乐盒子，实现了音乐分类、播放、暂停、下一首、可控进度条、动态歌词、收藏等功能。本项目使用了vh、百分比、媒体查询等比例缩放进行响应式布局，使用Ajax获取数据，解析数据并渲染至DOM，运用jQuery对DOM进行了操作，使用定时器（setInterval）对播放进度进行了控制，封装了一个jQuery插件，对歌词进行动态操作。</li>
+            <li>技术栈：HTML、CSS、JavaScript、jQuery、Ajax、响应式布局</li>
+            <!--<li>项目源码:https://github.com/EmilyHeXue/TV-MusicPlay</li>
+            <li>预览项目: <a href="https://emilyhexue.github.io/TV-MusicPlay/">点击查看</a></li>-->
+          </ul>
+        </div>
+        <div class="item">
+          <h3>移动端豆瓣影视
+          	<a href="https://github.com/EmilyHeXue/test/blob/master/Douban_movie.html">项目源码</a>
+          	<a href="https://emilyhexue.github.io/test/Douban_movie.html">预览项目</a>
+          </h3>
+          <ul>
+            <li>本项目是一个简单的移动端豆瓣影视应用，基于豆瓣提供的免费API，实现了top250排行列表、北美排行列表、搜索等功能。本项目使用了 Flex 进行页面布局，主要适配移动端，使用jQuery对DOM进行了操作，用动态增删class方式来进行页面的切换，使用Ajax获取数据，解析数据并渲染至DOM，利用懒加载减少了页面加载时间，提高了页面的性能。</li>
+            <li>技术栈：HTML、CSS、JavaScript、jQuery、Ajax、Flex布局</li>
+            <!--<li>项目源码:https://github.com/EmilyHeXue/test/blob/master/Douban_movie.html</li>
+            <li>预览项目: <a href="https://emilyhexue.github.io/test/Douban_movie.html">点击查看</a></li>-->
+          </ul>
+        </div>
+        <div class="item">
+          <h3>小程序实现翻译工具 
+          	<a href="https://github.com/EmilyHeXue/WeChat-program/tree/weixin">项目源码</a>
+          </h3>
+          <ul>
+            <li>这是一款提供翻译功能的微信小程序。该项目以百度翻译 API 为服务器域名提供支持，实现多语言切换，主要包含翻译首页、语言列表页和翻译历史页。</li>
+            <li>技术栈：HTML、CSS、Flex布局、微信小程序API</li>
+            <!--<li>项目源码:https://github.com/EmilyHeXue/WeChat-program/tree/weixin</li>
+            <li>预览项目: <a href="https://github.com/EmilyHeXue/WeChat-program/tree/weixin">点击查看</a></li>-->
+          </ul>
+        </div>
+      </section>
+      
+      <section>
+        <h2>工作经历</h2>
+        <div class="item">
+        	<h3 class="title">深圳超店科技有限公司</h3><span>(2019年8月~2020年2月)</span>
+        	<h5>超级导购H5</h5>
+        	<ul>
+        		<li>该项目是线下门店管理客户的程序，主要功能有推出最新活动项目，通过分享文章埋点统计用户活动数据。基于Vue全家桶制作的单页应用，采用 Vant组件库作交互；该项的性能优化、UI组件封装有我独立完成。</li>
+        	</ul>
+        	<h5>超店科技微信小程序</h5>
+        	<ul>
+        		<li>该项目主要基于小程序实现珠宝商城业务，包括商城预定商品，会员管理以及抢购、集赞、预售等活动。其中活动模块使用canvas路径绘制动态海报，本地存储json数据用来替换海报样式，用户可自由编辑文本图片； 商城预定调取微信支付模块，用积分抵扣支付金额，实现线下复购率。</li>
+        	</ul>
+        </div>
+        <div class="item">
+          <h3 class="title">深圳市即刻互动网络技术有限公司</h3><span>(2019年3月~2019年7月)</span>
+          <!--<ul>
+          	<li>熟练使用DIV+CSS并结合JS负责产品的前端开发和页面制作；熟练解决浏览器的兼容问题；</li>
+          	<li>熟悉W3C标准和各主流浏览器在前端开发中的差异，</li>
+          	<li>负责相关产品的需求以及前端程序的实现，提供合理的前端架构； </li>
+          	<li>与产品、后台开发人员保持良好沟通，能快速理解、消化各方需求，落实为具体的开发工作； </li>
+          	<li>了解服务器端的相关工作，在交互体验、产品设计等方面有自己的见解。</li>
+          </ul>-->
+          <h5>银行自助小程序</h5>
+          <ul>
+            <li>这个项目主要基于小程序实现银行分享业务，包括注册、登录、分享链接、分享海报、查看详情列表等功能。本项目使用了 Flex 进行页面布局，主要适配手机；使用canvas路径绘制动态海报；使用webView跳转H5页面记录数据。</li>
+          </ul>
+          <h5>家装平台App</h5>
+          <ul>
+          	<li>这个项目主要是家具家装平台App项目，基于jQuery实现提交信息、删除、咨询功能。本项目注重布局，采用 Flex、position进行页面布局，适配于移动端；使用Ajax传输数据渲染页面内容；实现聊天咨询、bannner轮播功能。</li>
+          </ul>
+        </div>
+        <div class="item">
+        	<h3 class="title">柳州企航信息技术有限公司</h3><span>(2017年6月~2019年2月)</span>
+        	<h5>医云联</h5>
+          	<ul>
+            	<li>该项目主要是基于微信公众号搭建中药平台，实现患便捷线上诊断，包括查看医生排班、在线咨询、购买中药、发起众筹等功能，实现与用户密切交互。在项目中使用Html5+CSS3+jQuery技术，ajax对接后台数据。</li>
+          	</ul>
+          	<!--<h5>家家送水</h5>
+          	<ul>
+            	<li>这个项目主要是一款覆盖市区管理送水业务的微信公众号项目。基于原生JavaScript实现实现用户登录、下单、跟踪订单功能。</li>
+          	</ul>-->
+        </div>
+        
+      </section>
+      
+      <!--<section>
+        <h2>个人评价</h2>
+        <p>本人为人诚恳、乐观向上、能吃苦耐劳，善于与人沟通，有良好的交际和组织协调能力。 工作认真细致，有团结协作精神、适应力强、上手快、勤奋好学、乐于探索发现解决问题。</p>
+      </section>-->
+    </main>
+  </div>
+  
+  <script type="text/javascript" src="//at.alicdn.com/t/font_1073585_onyb0o2r9d.js"></script>
+ 	<script type="text/javascript">
+ 		
+ 		class Greet inherits Component {
+		    render(){
+		        return(
+		            <div>Welcome!</div>
+		        )
+		    }
+		}
+		ReactDOM.render((
+		    </Greet>,
+		    document..getElementById('root'))
+		)
+ 	</script>
+	</body>
+</html>
