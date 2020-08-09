@@ -1,4 +1,3 @@
 # Curriculum-vitae
-
-> 在线简历
+在线简历
 
