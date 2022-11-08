@@ -171,7 +171,7 @@
     </header>
     <aside>
       <div class="avatar">
-        <img src="img/zp.jpg" alt="he xue">
+        <img src="img/pic.jpg" alt="he xue">
       </div>
       
       <section>
@@ -181,14 +181,14 @@
             <span>学历</span><span>大专</span>
           </div>
           <div class="item">
-            <span>工作经验</span><span>3年</span>
+            <span>工作经验</span><span>5年</span>
           </div>
           <div class="item">
             <span>毕业时间</span><span>2017.6</span>
           </div>
-          <div class="item">
-            <span>年龄</span><span>24岁</span>
-          </div>
+          <!-- <div class="item">
+            <span>年龄</span><span>26岁</span>
+          </div> -->
         </div>
       </section>
       
@@ -212,8 +212,8 @@
             <span class="rule"><i style="width: 90%"></i></span>
           </div> 
           <div class="item">
-            <span class="keyword">Node.js</span>
-            <span class="rule"><i style="width: 65%"></i></span>
+            <span class="keyword">React</span>
+            <span class="rule"><i style="width: 60%"></i></span>
           </div> 
         </div>
       </section>
@@ -222,19 +222,23 @@
         <h2>联系方式</h2>
         <div class="detail contact">
           <div class="item">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
+			<span>手机</span>
+            <!-- <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg> -->
             <span>13557122395</span>
           </div>
           <div class="item">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
+			<span>QQ</span>
+            <!-- <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg> -->
             <span>2083585497@qq.com</span>
           </div>
           <div class="item">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wechat"></use></svg>
+			<span>微信</span>
+            <!-- <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wechat"></use></svg> -->
             <span>a7g9khexue</span>
           </div>
           <div class="item">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-city"></use></svg>
+			<span>坐标</span>
+            <!-- <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-city"></use></svg> -->
             <span>深圳</span>
           </div>
 
@@ -263,14 +267,18 @@
         <div class="skill">
             <ul>
                 <li>熟练掌握 HTML5 和 CSS3，具有像素级还原设计稿的能力。</li>
-                <li>熟练掌握原生 JavaScript，掌握重要概念如 <b>原型</b>，<b>闭包</b>，<b>作用域链</b>等。</li>
-                <li>熟悉 <b>jQuery</b> 常用 API。</li>
-                <li>熟悉 <b>HTTP协议</b>、前后端交互技术 <b>JSONP</b>、<b>AJAX</b>。</li>
+				<li>掌握传统布局、flex 布局、响应式布局、移动端适配、web 性能优化。</li>
+                <!-- <li>熟练掌握原生 JavaScript，掌握重要概念如 <b>原型</b>，<b>闭包</b>，<b>作用域链</b>等。</li> -->
+                <!-- <li>熟悉 <b>jQuery</b> 常用 API。</li> -->
+                <!-- <li>熟悉 <b>HTTP协议</b>、前后端交互技术 <b>JSONP</b>、<b>AJAX</b>。</li> -->
+				<li>熟悉http协议，具备web性能优化经验和web安全知识。</li>
+				<li>具备扎实的<b>Javascript/HTML5/CSS3</b>基础，熟悉ES6语法，熟悉W3C标准规范。</li>
+				<li>熟悉MVVM模式,熟练使用<b>Vue</b>开发框架及周边生态。</li>
+				<li>熟悉前端组件化、模块化开发，能够独立封装组件。</li>
                 <!--<li>熟悉 <b>Node.js</b>，能使用 express 搭建基础后台开发。</li>-->
                 <!--<li>熟悉Http缓存机制，ES6语法。</li>-->
-                <li>掌握传统布局、flex 布局、响应式布局、<b>移动端适配</b>、web 性能优化。</li>
-                <li>熟悉使用<b>Vue框架</b>，对Vue-router、Axios、Vuex有一定的理解。 </li>
-                <li>掌握<b>微信小程序</b>原生开发和<b>UNI-APP</b>开发</li>
+                <!-- <li>熟悉使用<b>Vue框架</b>，对Vue-router、Axios、Vuex有一定的理解。 </li> -->
+                <li>掌握<b>微信小程序</b>原生开发和<b>使用Taro框架</b>开发。</li>
                 <!--<li>掌握扎实的设计基础，精通<b>Photoshop</b>、CorelDRAW等平面设计软件</li>-->
             </ul>
         </div>
@@ -285,12 +293,12 @@
           </h3>
           <ul>
             <li>该项目使用 Vue 实现了一个在线博客分享的平台。包含首页、用户文章列表、个人管理等页面，实现了登录、注册、编辑、发布等功能。项目使用 Grid 作页面布局，以 Vue cli为基础创建项目模版，使用 Less 作 CSS 预处理，引用 Element UI作交互。通过 Vue Router实现路由的跳转、异步加载、权限验证等，通过 vuex实现状态管理，用 Axios获取数据，并对接口进行了封装。</li>
-            <li>技术栈：Vue CLI/ Vue2/ Axios/ Vue Router/ Vuex/ ES6/ Npm/ Grid/ Less</li>
+            <li>技术栈：Vue CLI、Vue2、Axios、Vue Router、Vuex、ES6、Grid、Less</li>
             <!--<li>项目源码:https://github.com/EmilyHeXue/vue-blog</li>
             <li>预览项目: <a href="https://emilyhexue.github.io/vue-blog/">点击查看</a></li>-->
           </ul>
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <h3>魔法咪路咪路的填色小游戏
           	<a href="https://github.com/EmilyHeXue/MILU">项目源码</a>
           	<a href="https://emilyhexue.github.io/MILU/index.html">预览项目</a>
@@ -299,7 +307,7 @@
             <li>这是一款提一个关于魔法咪路咪路的填色小游戏。该项目以使用框架jquery；动态初始化生成RGB颜色库，并对其做封装；用svg的path绘制闭合路径形成图案，当选种颜色点击区块填充对应色彩，同时具有撤销、还原功能。</li>
             <li>技术栈：jQuery、SVG</li>
           </ul>
-        </div>
+        </div> -->
         <div class="item">
         	<h3>购物商城小程序
         		<a href="https://github.com/EmilyHeXue/ShopTem.uni">项目源码</a>
@@ -310,6 +318,16 @@
         		<li>技术栈：微信小程序API、UNI-APP的API</li>
         	</ul>
         </div>
+		<div class="item">
+			<h3>番茄闹钟
+				<a href="https://github.com/EmilyHeXue/test/blob/master/Douban_movie.html">项目源码</a>
+				<a href="https://emilyhexue.github.io/test/Douban_movie.html">预览项目</a>
+			</h3>
+			<ul>
+				<li>本项目一款简单的时间管理计时器 webapp。项目包括登录、注册、番茄闹钟、列表、数据统计等。</li>
+				<li>技术栈：React、create-react-app、Ant-design、typescript、es6、redux、react-router、echarts、axios</li>
+			</ul>
+		</div>
         <div class="item">
           <h3>音乐盒子
           	<a href="https://github.com/EmilyHeXue/TV-MusicPlay">项目源码</a>
@@ -328,7 +346,7 @@
           	<a href="https://emilyhexue.github.io/test/Douban_movie.html">预览项目</a>
           </h3>
           <ul>
-            <li>本项目是一个简单的移动端豆瓣影视应用，基于豆瓣提供的免费API，实现了top250排行列表、北美排行列表、搜索等功能。本项目使用了 Flex 进行页面布局，主要适配移动端，使用jQuery对DOM进行了操作，用动态增删class方式来进行页面的切换，使用Ajax获取数据，解析数据并渲染至DOM，利用懒加载减少了页面加载时间，提高了页面的性能。</li>
+            <li>本项目是一个简单的移动端豆瓣影视应用，基于豆瓣提供的免费API，实现了列表展示、搜索等功能。本项目使用了 Flex 进行页面布局，主要适配移动端，使用jQuery对DOM进行了操作，用动态增删class方式来进行页面的切换，使用Ajax获取数据，解析数据并渲染至DOM，利用懒加载减少了页面加载时间，提高了页面的性能。</li>
             <li>技术栈：HTML、CSS、JavaScript、jQuery、Ajax、Flex布局</li>
             <!--<li>项目源码:https://github.com/EmilyHeXue/test/blob/master/Douban_movie.html</li>
             <li>预览项目: <a href="https://emilyhexue.github.io/test/Douban_movie.html">点击查看</a></li>-->
@@ -349,6 +367,21 @@
       
       <section>
         <h2>工作经历</h2>
+		<div class="item">
+        	<h3 class="title">健康头条科技股份有限公司</h3><span>(2020年10月~2022年9月)</span>
+        	<h5>健康头条后台管理</h5>
+        	<ul>
+        		<li>该项目是基于健康头条APP的后台管理系统，主要功能有用户权限管理，商城管理，对组件进行二次封装；技术点：Vue2 + Element + Echart</li>
+        	</ul>
+			<h5>舆情后台管理平台</h5>
+        	<ul>
+        		<li>该项目是基于大数据统计的舆情后台管理系统，主要功能有用户权限管理，编辑器组件二次封装；技术点：Vue3 + Ant</li>
+        	</ul>
+        	<h5>001首营第三终端小程序</h5>
+        	<ul>
+        		<li>该项目主要基于小程序电子资料交换业务；主要功能是可视化展示数据、展示列表数据以及上传检测报告；技术点：Vue3 + Taro + AntV F2 + Sass</li>
+        	</ul>
+        </div>
         <div class="item">
         	<h3 class="title">深圳超店科技有限公司</h3><span>(2019年8月~2020年2月)</span>
         	<h5>超级导购H5</h5>
@@ -378,17 +411,17 @@
           	<li>这个项目主要是家具家装平台App项目，基于jQuery实现提交信息、删除、咨询功能。本项目注重布局，采用 Flex、position进行页面布局，适配于移动端；使用Ajax传输数据渲染页面内容；实现聊天咨询、bannner轮播功能。</li>
           </ul>
         </div>
-        <div class="item">
+        <!-- <div class="item">
         	<h3 class="title">柳州企航信息技术有限公司</h3><span>(2017年6月~2019年2月)</span>
         	<h5>医云联</h5>
           	<ul>
             	<li>该项目主要是基于微信公众号搭建中药平台，实现患便捷线上诊断，包括查看医生排班、在线咨询、购买中药、跳转众筹平台等功能，实现与用户密切交互。在项目中使用Html5+CSS3+jQuery技术，ajax对接后台数据。</li>
           	</ul>
-          	<!--<h5>家家送水</h5>
+          	<h5>家家送水</h5>
           	<ul>
             	<li>这个项目主要是一款覆盖市区管理送水业务的微信公众号项目。基于原生JavaScript实现实现用户登录、下单、跟踪订单功能。</li>
-          	</ul>-->
-        </div>
+          	</ul>
+        </div> -->
         
       </section>
       
